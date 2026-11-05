@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "AI Content Detector",
+  "version": "1.0",
+"author": "GitLabsVPN",
+  "description": "Analyzes text on a webpage to estimate AI generation probability.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

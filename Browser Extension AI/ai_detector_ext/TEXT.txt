@@ -1,0 +1,43 @@
+
+---
+
+## 📜 `.gitignore`
+
+Here's a `.gitignore` that excludes unnecessary files for a web-based browser extension:
+
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Virtual environment
+venv/
+env/
+
+# IDEs
+*.swp
+*.swo
+*.swn
+*.sublime-workspace
+*.vscode/
+*.idea/
+
+# JS/HTML files (ignore if you're not including actual build files)
+dist/
+build/
+*.log
+
+# Webpack or other build systems
+node_modules/
+package-lock.json
+yarn.lock
+
+# Flask-specific
+.run
+*.pid
+
+# Extension files
+*.crx
